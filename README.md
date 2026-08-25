@@ -22,49 +22,130 @@ The main goal is to transform raw e-commerce data into meaningful insights that 
 
 ## 🛠️ Technologies Used
 
-* Python
-* Jupyter Notebook
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
+* **Python**
+* **Jupyter Notebook**
+* **Pandas**
+* **NumPy**
+* **Matplotlib**
+* **Seaborn**
 
 ## 📂 Project Structure
 
+```text
 E-Commerce-Sales-Analysis/
 │
 ├── E-Commerce Sales Analysis.ipynb
 ├── dataset.csv
-├── README.md
-└── images/
+├── images/
+│   └── analysis visualizations
+│
+└── README.md
+```
 
 > **Note:** File names may vary depending on the files included in the project repository.
 
-## ⚙️ Installation
+## ⚙️ Installation & Setup
 
-### 1. Clone the Repository
+Follow the steps below to set up and run the project on your local system.
+
+### 1️⃣ Install Python
+
+Download and install Python on your system.
+
+Verify the installation:
+
+```bash
+python --version
+```
+
+### 2️⃣ Clone the Repository
+
+Open **Git Bash, Command Prompt, or VS Code Terminal** and run:
+
+```bash
 git clone https://github.com/rajasreekarthick/E-Commerce-Sales-Analysis.git
+```
 
-### 2. Navigate to the Project Folder
+### 3️⃣ Navigate to the Project Folder
+
+```bash
 cd E-Commerce-Sales-Analysis
+```
 
-### 3. Install Required Libraries
-Install the required Python libraries using pip:
+### 4️⃣ Create a Virtual Environment
+
+Create a virtual environment for the project:
+
+```bash
+python -m venv .venv
+```
+
+### 5️⃣ Activate the Virtual Environment
+
+#### Windows – Command Prompt
+
+```cmd
+.venv\Scripts\activate
+```
+
+#### Windows – PowerShell
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+#### Windows – Git Bash
+
+```bash
+source .venv/Scripts/activate
+```
+
+After successful activation, you should see:
+
+```text
+(.venv)
+```
+
+at the beginning of the terminal.
+
+### 6️⃣ Upgrade pip
+
+```bash
+python -m pip install --upgrade pip
+```
+
+### 7️⃣ Install Required Libraries
+
+Install the required Python libraries:
+
+```bash
 pip install pandas numpy matplotlib seaborn jupyter
+```
 
-### 4. Launch Jupyter Notebook
-Start Jupyter Notebook using:
+### 8️⃣ Launch Jupyter Notebook
+
+Start Jupyter Notebook:
+
+```bash
 jupyter notebook
-      This will open Jupyter Notebook in your web browser.
+```
 
-### 5. Open the Project
+Jupyter Notebook will open automatically in your web browser.
+
+### 9️⃣ Open the Project Notebook
+
 Open:
-   E-Commerce Sales Analysis.ipynb
-Then run the notebook cells step by step to perform the analysis.
+
+```text
+E-Commerce Sales Analysis.ipynb
+```
+
+Run the notebook cells step by step to perform the analysis.
 
 ## 📊 Dataset
+
 The project uses an e-commerce sales dataset containing information related to sales and customer transactions.
-   
+
 The dataset is used for:
 
 * Sales analysis
@@ -77,19 +158,23 @@ Make sure the dataset file is placed in the appropriate project folder before ru
 
 ## 🔍 Data Analysis Process
 
-### 1. Data Loading
-The dataset is loaded into Python using the Pandas library.
+### 1️⃣ Data Loading
 
-### 2. Data Cleaning
+The dataset is loaded into Python using the **Pandas** library.
+
+### 2️⃣ Data Cleaning
+
 The data is examined and prepared for analysis by:
 
 * Checking missing values
 * Checking duplicate records
 * Understanding data types
 * Handling unnecessary or inconsistent data
+* Preparing the dataset for analysis
 
-### 3. Exploratory Data Analysis
-Exploratory Data Analysis is performed to understand the dataset and identify important patterns.
+### 3️⃣ Exploratory Data Analysis
+
+Exploratory Data Analysis (EDA) is performed to understand the dataset and identify important patterns.
 
 The analysis includes:
 
@@ -100,12 +185,13 @@ The analysis includes:
 * Sales trend analysis
 * Order analysis
 
-### 4. Data Visualization
+### 4️⃣ Data Visualization
+
 Charts and graphs are created using **Matplotlib** and **Seaborn** to make the analysis easier to understand.
 
 ## 📈 Key Analysis
 
-The project analyzes different aspects of e-commerce sales, including:
+The project analyzes different aspects of e-commerce sales.
 
 ### 💰 Sales Analysis
 
@@ -139,7 +225,7 @@ The project analyzes different aspects of e-commerce sales, including:
 
 ## 📊 Visualizations
 
-The project uses different types of visualizations to understand the data, such as:
+The project uses different types of visualizations, including:
 
 * Bar Charts
 * Line Charts
@@ -148,7 +234,7 @@ The project uses different types of visualizations to understand the data, such 
 * Distribution Plots
 * Comparison Charts
 
-These visualizations help identify patterns and trends in the e-commerce data.
+These visualizations help identify patterns, relationships, and trends in the e-commerce data.
 
 ## 💡 Key Insights
 
@@ -161,23 +247,51 @@ The analysis helps identify:
 * Sales trends
 * Areas that may provide business opportunities
 
-## 🚀 How to Run the Project
+## ▶️ How to Run the Project
 
-Follow these steps:
+After completing the initial setup, use the following commands whenever you want to run the project again.
 
-# Clone the repository
-git clone https://github.com/rajasreekarthick/E-Commerce-Sales-Analysis.git
+### Navigate to the project folder
 
-# Navigate to the project folder
+```bash
 cd E-Commerce-Sales-Analysis
+```
 
-# Install required libraries
-pip install pandas numpy matplotlib seaborn jupyter
+### Activate the virtual environment
 
-# Launch Jupyter Notebook
+For Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+For Git Bash:
+
+```bash
+source .venv/Scripts/activate
+```
+
+### Launch Jupyter Notebook
+
+```bash
 jupyter notebook
+```
 
-Then open the `.ipynb` file and run the cells.
+Then open the:
+
+```text
+E-Commerce Sales Analysis.ipynb
+```
+
+file and run the cells.
+
+## 🛑 Stop Jupyter Notebook
+
+To stop the Jupyter Notebook server, return to the terminal and press:
+
+```text
+Ctrl + C
+```
 
 ## 📓 Project Notebook
 
@@ -185,30 +299,35 @@ The Jupyter Notebook contains:
 
 * Complete Python code
 * Data preprocessing
-* Data analysis
+* Data cleaning
 * Exploratory Data Analysis
 * Data visualizations
 * Analysis outputs
 * Business insights
 
+## 💼 Benefits
+
+This project helps demonstrate practical skills in:
+
+* Data Cleaning
+* Data Analysis
+* Exploratory Data Analysis
+* Python Programming
+* Pandas
+* NumPy
+* Data Visualization
+* Business Insights
+
 ## 📌 Conclusion
 
-The **E-Commerce Sales Analysis** project demonstrates how Python-based data analysis techniques can be used to understand sales data and customer behavior.
-Through data cleaning, exploratory data analysis, and visualization, the project extracts meaningful insights from e-commerce data and presents them in an easy-to-understand format.
-This project provides practical experience in **Data Analysis, Python, Pandas, Data Visualization, and Exploratory Data Analysis**.
+The **E-Commerce Sales Analysis** project demonstrates how Python-based data analysis techniques can be used to understand sales data, customer behavior, product performance, and business trends.
+
+Through data cleaning, exploratory data analysis, and visualization, the project transforms raw e-commerce data into meaningful insights that can support data-driven business decisions.
 
 ## 👩‍💻 Author
 
 **Rajasree Karthick**
 
-### 🔗 GitHub
+LinkedIn: https://www.linkedin.com/in/rajasree-karthick-497074294
 
-https://github.com/rajasreekarthick
 
-### 📁 Project Repository
-
-https://github.com/rajasreekarthick/E-Commerce-Sales-Analysis
-
-## ⭐ Acknowledgement
-
-This project was developed for **learning, practice, and portfolio purposes** to demonstrate practical skills in Python-based data analysis.
